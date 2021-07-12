@@ -1,0 +1,41 @@
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Blog Post</display-name>
+  <description>The name of your game</description>
+  <super-type>base:structured</super-type>
+  <form>
+    <input name="author" type="TextLine">
+      <label>Author:</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+
+    <input name="postTitle" type="TextLine">
+      <label>Post Title</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+
+    <input name="postDate" type="Date">
+      <label>Post Date:</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input> 
+    
+    <input name="postIntro" type="TextArea">
+      <label>Post Intro:</label>
+      <config>
+        <max-length>300</max-length> 
+        <show-counter>true</show-counter> 
+      </config>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+
+    <input name="postBody" type="HtmlArea">
+      <label>Write your post here:</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+
+    <input name="postImage" type="ImageSelector">
+      <label>Post cover image:</label>
+      <occurrences minimum="1" maximum="5"/>
+    </input>
+
+  </form>
+</content-type>

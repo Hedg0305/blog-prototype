@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+
+}
+
+img{
+  display: inline;
+}
+
+hr:last-of-type{
+  display: none;
+}
+
+h1{
+  margin: 0;
+}
+
+h1 + p, h1 + p + p{
+  margin-top: 0;
+  color: gray
+}
+
+.card{
+  margin: 0 auto;
+  width: 300px;
+}
+
+.author{
+  color: gray;
+}
+
+img{
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlightPost{
+  width: 100%;
+}
+
+.allPosts{
+  width: 100%;
+}
+
+.spotlightInfo h3{
+  margin: 3px 0;
+}
+
+.spotlightInfo p{
+  color: gray;
+  margin: 3px 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav ul li{
+  margin-right: 10px;
+}
+
+footer{
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+footer h3{
+  display: inline-block;
+}

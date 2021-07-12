@@ -1,0 +1,11 @@
+<section class="spotlightPost">
+  <div data-th-if=${postInfo} data-th-remove="tag">
+    <img th:src="${postInfo.image}" alt="">
+    <div class="spotlightInfo">
+      <h3 data-th-text="${postInfo.title}"></h3>
+      <p data-th-text="${postInfo.intro}"></p>
+      <p data-th-text="${postInfo.author}"></p>
+      <a th:href="${postInfo.url}">Leia mais</a>
+    </div>
+  </div>
+</section>

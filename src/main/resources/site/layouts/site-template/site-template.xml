@@ -1,0 +1,9 @@
+<layout>
+  <display-name>Site template</display-name>
+  <form />
+  <regions>
+    <region name="header"/>
+    <region name="body"/>
+    <region name="footer"/>
+  </regions>
+</layout>

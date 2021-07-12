@@ -1,0 +1,8 @@
+<layout>
+  <display-name>upper/bottom</display-name>
+  <form />
+  <regions>
+    <region name="upper"/>
+    <region name="bottom"/>
+  </regions>
+</layout>

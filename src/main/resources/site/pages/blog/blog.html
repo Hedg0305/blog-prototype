@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title data-th-text="${displayName}">Sample title</title>
+    <link
+      rel="stylesheet"
+      th:href="${portal.assetUrl({'_path=styles/styles.css'})}"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- <h1>Blog main</h1>
+    <nav>
+      <ul>
+        <li><a th:href="${portal.pageUrl({'_path=/hello-world/blog'})}">Home</a></li>
+      </ul>
+    </nav> -->
+
+    <div data-portal-region="main">
+      <div data-th-if="${mainRegion}" data-th-each="component : ${mainRegion.components}" data-th-remove="tag">
+        <div data-portal-component="${component.path}" data-th-remove="tag"></div>
+      </div>
+    </div>
+  </body>
+</html>

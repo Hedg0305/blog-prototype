@@ -1,0 +1,4 @@
+<part xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Footer</display-name>
+  <description>Place it at the bottom spot!</description>
+</part>

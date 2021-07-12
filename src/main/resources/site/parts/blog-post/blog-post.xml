@@ -1,0 +1,4 @@
+<part xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Blog Post</display-name>
+  <description>Drag'n drop enabled</description>
+</part>

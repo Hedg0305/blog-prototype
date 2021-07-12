@@ -1,0 +1,4 @@
+<part xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Header</display-name>
+  <description>Place it at the upper spot!</description>
+</part>

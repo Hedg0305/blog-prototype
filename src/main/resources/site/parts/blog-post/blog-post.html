@@ -1,0 +1,10 @@
+<div>
+  <div data-th-if="${postData}" data-th-remove="tag">
+    <img th:src="${postImage}"alt="">
+    <h1 data-th-text="${postTitle}"></h1>
+    <p data-th-text="${postIntro}"></p>
+    <p><span data-th-text="${author}"></span>, <span data-th-text="${postDate}"></span></p>
+  
+    <div data-th-utext="${postBody}"></div>
+  </div>
+</div>
