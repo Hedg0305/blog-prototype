@@ -11,6 +11,12 @@ exports.get = function(req) {
     id: postData.postImage,
     scale: 'block(600,300)'
   } )
+  
+  function processBody( body ){
+    return portalLib.processHtml( {
+      value: body
+    })
+  } 
 
   var model = {
     postData,
@@ -19,14 +25,9 @@ exports.get = function(req) {
     postDate: postData.postDate,
     postIntro: postData.postIntro,
     postBody: processBody(postData.postBody),
-    postImage
+    postImage,
   };
 
-  function processBody( body ){
-    return portalLib.processHtml( {
-      value: body
-    })
-  }
 
   var view = resolve('blog-post.html');
 

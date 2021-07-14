@@ -1,5 +1,10 @@
 <header>
   <h1>LOGO</h1>
+  <form th:action="${searchPath}" >
+    <label for="q">Search post</label>
+    <input type="text" name="q" id="q" placeholder="Search a post">
+    <button type="submit">Search</button>
+  </form>
   <nav>
     <ul>
       <li><a th:href="${homePath}">Home</a></li>

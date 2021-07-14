@@ -9,12 +9,12 @@ exports.get = function(req) {
 
   var content = portal.getContent();
 
-  var children = contentLib.getChildren( {
-    key: content._path,
+  var posts = contentLib.query({
     start: 0,
-  } ).hits;
+    contentTypes: ["games:blog"]
+  }).hits
   
-  children.forEach( post =>{
+  posts.forEach( post =>{
     var postInfo = {}
     postInfo._name = post._name
     postInfo.author = post.data.author
@@ -24,7 +24,7 @@ exports.get = function(req) {
     postInfo.path = getPath( post._path )
     postsInfo.push( postInfo );
   } )
-  
+
   function getImgURL( img ){
     return portalLib.imageUrl( {
       id: img,
@@ -43,7 +43,6 @@ exports.get = function(req) {
     mainRegion: content.page.regions.main,
     type: content.type,
     postsInfo,
-    children
   }
 
   var view = resolve('all-posts.html');

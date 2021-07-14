@@ -1,0 +1,4 @@
+<part xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Search results</display-name>
+  <description>Place it in the body region!</description>
+</part>

@@ -1,21 +1,24 @@
 var portal = require('/lib/xp/portal');
 var thymeleaf = require( '/lib/thymeleaf' );
-var portalLib = require('/lib/xp/portal');
+var portalLib = require( '/lib/xp/portal' );
+
 
 exports.get = function(req) {
 
-  function getPath(){
+  function getPath(goTo){
     return portalLib.pageUrl( {
-      path: '/hello-world/blog',
+      path: goTo,
     })
   }
 
-  var homePath = getPath()
+  var homePath = getPath('/hello-world/blog')
+  var searchPath = getPath('/hello-world/blog/search')
 
   var model = {
-    homePath
+    homePath,
+    searchPath
   };
-
+  
   var view = resolve('header.html');
 
   return {

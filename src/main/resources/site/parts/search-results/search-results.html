@@ -1,0 +1,12 @@
+<section>
+  <p>Results for <span data-th-text="${search}"></span></p>
+  <div data-th-if="${postsInfo}" data-th-each="post : ${postsInfo}" data-th-remove="tag">
+    <div class="card">
+      <h3 data-th-text="${post.title}"></h3>
+      <img th:src="${post.image}" alt="">
+      <p data-th-text="${post.intro}"></p>
+      <p class="author" data-th-text="${post.author}"></p>
+        <a th:href="${post.path}"><p>Leia mais</p></a>
+    </div>
+  </div>
+</section>
