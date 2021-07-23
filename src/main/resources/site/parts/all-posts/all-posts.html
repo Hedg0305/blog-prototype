@@ -5,7 +5,7 @@
       <img th:src="${post.image}" alt="">
       <p data-th-text="${post.intro}"></p>
       <p class="author" data-th-text="${post.author}"></p>
-      <div data-th-if="${type == 'base:folder'}" data-th-remove="tag">
+      <div data-th-if="${type == 'portal:site'}" data-th-remove="tag">
         <a th:href="${post.path}"><p>Leia mais</p></a>
       </div>
     </div>

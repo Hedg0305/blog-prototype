@@ -1,0 +1,27 @@
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Users</display-name>
+  <description>Fill with your infos</description>
+  <super-type>base:structured</super-type>
+  <form>
+   <input name="id" type="Long">
+      <label>id:</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+
+    <input name="name" type="TextLine">
+      <label>Name:</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+
+    <input name="username" type="TextLine">
+      <label>Username:</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+
+    <input name="email" type="TextLine">
+      <label>Email:</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+
+  </form>
+</content-type>

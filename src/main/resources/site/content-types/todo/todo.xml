@@ -1,0 +1,26 @@
+<content-type xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Todo</display-name>
+  <description>Describe your todo</description>
+  <super-type>base:structured</super-type>
+  <form>
+    <input name="userId" type="Long">
+      <label>UserId:</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+
+   <input name="id" type="Long">
+      <label>id:</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+    
+    <input name="title" type="TextArea">
+      <label>title:</label>
+      <config>
+        <max-length>300</max-length> 
+        <show-counter>true</show-counter> 
+      </config>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+
+  </form>
+</content-type>

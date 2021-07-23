@@ -1,10 +1,27 @@
 <div>
+  <p data-th-text="${path}"></p>
+
   <div data-th-if="${postData}" data-th-remove="tag">
-    <img th:src="${postImage}"alt="">
+    <img th:src="${postImage}" alt="" />
     <h1 data-th-text="${postTitle}"></h1>
     <p data-th-text="${postIntro}"></p>
-    <p><span data-th-text="${author}"></span>, <span data-th-text="${postDate}"></span></p>
-  
+    <p>
+      <span data-th-text="${author}"></span>,
+      <span data-th-text="${postDate}"></span>
+    </p>
+
     <div data-th-utext="${postBody}"></div>
+  </div>
+  <div class="links">
+    <div>
+      <div data-th-if="${previousPostPath}">
+        <a th:href="${previousPostPath}">Prevous post</a>
+      </div>
+    </div>
+    <div>
+      <div data-th-if="${nextPostPath}">
+        <a th:href="${nextPostPath}">Next post</a>
+      </div>
+    </div>
   </div>
 </div>

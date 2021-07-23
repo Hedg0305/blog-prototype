@@ -1,90 +1,103 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
   height: 100vh;
-
 }
 
-img{
+img {
   display: inline;
 }
 
-hr:last-of-type{
+hr:last-of-type {
   display: none;
 }
 
-h1{
+h1 {
   margin: 0;
 }
 
-h1 + p, h1 + p + p{
+h1 + p,
+h1 + p + p {
   margin-top: 0;
-  color: gray
+  color: gray;
 }
 
-.card{
+.card {
   margin: 0 auto;
   width: 300px;
 }
 
-.author{
+.author {
   color: gray;
 }
 
-img{
+img {
   margin: 0 auto;
   max-width: 100%;
 }
 
-.row{
+.row {
   display: flex;
   flex-direction: column;
 }
 
-.spotlightPost{
+.spotlightPost {
   width: 100%;
 }
 
-.allPosts{
+.allPosts {
   width: 100%;
 }
 
-.spotlightInfo h3{
+.spotlightInfo h3 {
   margin: 3px 0;
 }
 
-.spotlightInfo p{
+.spotlightInfo p {
   color: gray;
   margin: 3px 0;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-nav ul{
+nav ul {
   display: flex;
   list-style: none;
 }
 
-nav ul li{
+nav ul li {
   margin-right: 10px;
 }
 
-footer{
+footer {
   margin-top: auto;
   display: flex;
   justify-content: center;
 }
 
-footer h3{
+footer h3 {
   display: inline-block;
+}
+
+.userCard {
+  border: 1px solid red;
+  width: 280px;
+  display: inline-block;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
 }

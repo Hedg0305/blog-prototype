@@ -1,0 +1,4 @@
+<part xmlns="urn:enonic:xp:model:1.0">
+  <display-name>User</display-name>
+  <description>User infos</description>
+</part>

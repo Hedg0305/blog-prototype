@@ -1,0 +1,4 @@
+<part xmlns="urn:enonic:xp:model:1.0">
+  <display-name>Todos</display-name>
+  <description>Fetching todos</description>
+</part>

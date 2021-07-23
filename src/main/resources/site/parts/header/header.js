@@ -11,8 +11,8 @@ exports.get = function(req) {
     })
   }
 
-  var homePath = getPath('/hello-world/blog')
-  var searchPath = getPath('/hello-world/blog/search')
+  var homePath = getPath('/home')
+  var searchPath = getPath('/home/search')
 
   var model = {
     homePath,
